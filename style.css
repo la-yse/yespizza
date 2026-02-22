@@ -107,6 +107,19 @@ html {
     font-size: 0.8rem;
 }
 
+navbar .nav-links li a {
+    color: var(--black);
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+
+.navbar .nav-links li a:hover {
+    color: var(--red);
+    transition: color 0.4s ease;
+
+}
+
 .uber-btn {
     background-color: #4EA227;
     color: black;
@@ -115,6 +128,17 @@ html {
     cursor: pointer;
     font-weight: bold;
     border-radius: 50px;
+    transition: all 0.3s ease;
+    /* animação suave */
+}
+
+.uber-btn:hover {
+    background-color: #6FC93F;
+    /* leve mudança de cor */
+    transform: scale(1.05);
+    /* aumenta 5% */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    /* sombra suave */
 }
 
 /* --------------------- Hero --------------------- */
@@ -143,6 +167,28 @@ html {
     width: 400px;
 }
 
+/*--------- Animation Hero Image ---------*/
+
+.hero-image img {
+    transition: transform 3s ease-in-out;
+    animation: float-swing 4s ease-in-out infinite alternate;
+}
+
+@keyframes float-swing {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-10px) rotate(1deg);
+    }
+
+    100% {
+        transform: translateY(-5px) rotate(-1deg);
+    }
+}
+
+
 .hero-text h1 {
     font-size: 55px;
     color: #FFFFFF;
@@ -166,6 +212,13 @@ html {
     border-radius: 50px;
     display: block;
     margin: 30px auto 0 auto;
+    transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #FFEA3F;
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 .wave {
