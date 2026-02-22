@@ -6,6 +6,11 @@
     <title>Pizza Landing Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -45,7 +50,7 @@
         <!-- Wave SVG -->
         <div class="wave">
             <svg viewBox="0 0 1440 200" preserveAspectRatio="none">
-                <path fill="#F2F2F2" d="
+                <path fill="#F0F0F0" d="
                 M0,100 
                 C150,180 300,20 450,100 
                 C600,180 750,20 900,100 
@@ -59,62 +64,66 @@
 
     <!-- MENU SECTION -->
     <section class="menu-section" id="menu">
+        <h2 class="heading-title">MENU</h2>
+
         <div class="menu-card">
             <div class="menu-column">
                 <div class="menu-item">
-                    <strong>Classic Margherita</strong>
-                    <span>Tomato sauce, mozzarella, fresh basil</span>
+                    <strong>Pepperoni</strong>
+                    <span>(tomato sauce, mozzarella, pepperoni, oregano)</span>
                 </div>
                 <div class="menu-item">
-                    <strong>Pepperoni Delight</strong>
-                    <span>Pepperoni, mozzarella, tomato sauce</span>
+                    <strong>Mozzarella</strong>
+                    <span>(tomato sauce, mozzarella, oregano)</span>
                 </div>
                 <div class="menu-item">
-                    <strong>BBQ Chicken</strong>
-                    <span>Chicken, BBQ sauce, red onion</span>
+                    <strong>Bacon & Cheddar</strong>
+                    <span>(tomato sauce, mozzarella, bacon, cheddar, oregano)</span>
                 </div>
                 <div class="menu-item">
-                    <strong>Veggie Supreme</strong>
-                    <span>Bell peppers, olives, mushrooms</span>
+                    <strong>Three Cheese</strong>
+                    <span>(tomato sauce, mozzarella, provolone, blue cheese)</span>
                 </div>
                 <div class="menu-item">
-                    <strong>Four Cheese</strong>
-                    <span>Mozzarella, cheddar, parmesan, gorgonzola</span>
+                    <strong>Prosciutto & Burrata</strong>
+                    <span>(tomato sauce, mozzarella, prosciutto, burrata)</span>
                 </div>
             </div>
 
             <div class="menu-column">
                 <div class="menu-item">
-                    <strong>Hawaiian Classic</strong>
-                    <span>Ham, pineapple, mozzarella</span>
+                    <strong>Pesto and Bacon</strong>
+                    <span>(tomato sauce, mozzarella, pesto sauce and bacon)</span>
                 </div>
                 <div class="menu-item">
-                    <strong>Spicy Diavola</strong>
-                    <span>Spicy salami, chili flakes</span>
+                    <strong>Chocolate</strong>
+                    <span>(mozzarella, chocolate)</span>
                 </div>
                 <div class="menu-item">
-                    <strong>Meat Lovers</strong>
-                    <span>Beef, ham, sausage, pepperoni</span>
+                    <strong>Chicken Catupiry</strong>
+                    <span>(tomato sauce, mozzarella, chicken, catupiry cheese)</span>
                 </div>
                 <div class="menu-item">
-                    <strong>Mediterranean</strong>
-                    <span>Feta cheese, olives, tomatoes</span>
+                    <strong>Portuguese</strong>
+                    <span>(tomato sauce, mozzarella, ham, egg, olive, onion)</span>
                 </div>
                 <div class="menu-item">
-                    <strong>Truffle Special</strong>
-                    <span>Truffle oil, mushrooms, parmesan</span>
+                    <strong>Diavola</strong>
+                    <span>(tomato sauce, mozzarella, spianata calabrese sausage)</span>
                 </div>
             </div>
         </div>
 
         <div class="price-section">
             <div class="price-box">
-                <h3>Slice</h3>
-                <p>€1</p>
+                <span class="price-label">SLICES</span>
+                <span class="price-line"></span>
+                <span class="price-value">€1</span>
             </div>
-            <div class="price-box highlight">
-                <h3>Whole Pizza</h3>
-                <p>€11</p>
+            <div class="price-box">
+                <span class="price-label">WHOLE PIZZA</span>
+                <span class="price-line"></span>
+                <span class="price-value">€11</span>
             </div>
         </div>
     </section>

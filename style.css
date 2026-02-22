@@ -61,6 +61,23 @@ html {
     font-family: 'Cocogoose', sans-serif;
 }
 
+
+
+/* --------------------- General --------------------- */
+
+/*Sections title (Menu and Promos)*/
+.heading-title {
+    --font-principal: 'Inter', sans-serif;
+    font-size: 42px;
+    font-weight: 800;
+    color: #7F1B1B;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+
+
+
 /* --------------------- Nav Bar --------------------- */
 
 .navbar {
@@ -161,20 +178,23 @@ html {
 /* --------------------- Menu Section --------------------- */
 
 .menu-section {
-    background-color: #F2F2F2;
-    padding: 100px 0;
+    background-color: var(--navbarwhite);
+    padding: 40px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .menu-card {
+    background-color: #ffffff;
     width: 996px;
-    height: 427px;
-    background: white;
+    max-width: 95%;
+    padding: 40px 60px;
     display: flex;
     justify-content: space-between;
-    padding: 40px 60px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    gap: 40px;
 }
 
 .menu-column {
@@ -182,16 +202,50 @@ html {
     flex-direction: column;
     gap: 20px;
     width: 45%;
+    /*antes era 45*/
+    padding: 40px 30px;
 }
 
 .menu-item strong {
     display: block;
-    font-size: 18px;
+    font-size: 14px;
+    color: #1D1D1D;
+    font-family: var(--font-principal);
 }
 
 .menu-item span {
-    font-size: 14px;
-    color: #555;
+    font-size: 12px;
+    color: #888888;
+    font-family: var(--font-principal);
+
+}
+
+/* Prices with lines */
+.price-section {
+    display: flex;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.price-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-heading);
+}
+
+.price-label {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.price-line {
+    flex-grow: 1;
+    border-bottom: 1px solid #000;
+}
+
+.price-value {
+    font-weight: bold;
 }
 
 /* --------------------- Menu Prices --------------------- */
