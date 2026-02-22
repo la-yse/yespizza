@@ -18,9 +18,29 @@ html {
     --yellow: #E8D608;
     --white: #FFFFFF;
     --font-principal: 'Inter', sans-serif;
+    --font-coolvetica: 'Coolvetica', sans-serif;
+    --font-cocogoose: 'Cocogoose', sans-serif;
 }
 
-/* --------------------- Background colors --------------------- */
+/* --------------------- Fonts --------------------- */
+
+@font-face {
+    font-family: 'Coolvetica';
+    src: url('/assets/fonts/coolvetica.woff2') format('woff2'),
+        url('/assets/fonts/coolvetica.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cocogoose';
+    src: url('/assets/fonts/cocogoose.woff2') format('woff2'),
+        url('/assets/fonts/cocogoose.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* --------------------- Background colors & Fonts --------------------- */
 .bg-red {
     background-color: var(--red);
 }
@@ -31,6 +51,14 @@ html {
 
 .bg-white {
     background-color: var(--white);
+}
+
+.font-coolvetica {
+    font-family: 'Coolvetica', sans-serif;
+}
+
+.font-cocogoose {
+    font-family: 'Cocogoose', sans-serif;
 }
 
 /* --------------------- Nav Bar --------------------- */
@@ -78,10 +106,12 @@ html {
     background-color: #7F1B1B;
     color: white;
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-bottom: 150px;
+    padding-top: 50px;
 }
 
 .hero-content {
@@ -97,14 +127,16 @@ html {
 }
 
 .hero-text h1 {
-    font-size: 64px;
+    font-size: 55px;
     color: #FFFFFF;
 }
 
 .hero-text p {
-    margin: 20px 0;
-    font-size: 18px;
+    margin: 10px 0;
+    font-size: 16px;
     color: #FFFFFF;
+    font-family: var(--font-principal);
+    text-align: center;
 }
 
 .cta-btn {
@@ -114,6 +146,9 @@ html {
     border: none;
     font-weight: bold;
     cursor: pointer;
+    border-radius: 50px;
+    display: block;
+    margin: 30px auto 0 auto;
 }
 
 .wave {
