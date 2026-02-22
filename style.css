@@ -1,0 +1,188 @@
+/*--------------------- Reset ---------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-principal);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --navbarwhite: #F0F0F0;
+    --black: #1D1D1D;
+    --green: #4EA227;
+    --red: #7F1B1B;
+    --yellow: #E8D608;
+    --white: #FFFFFF;
+    --font-principal: 'Inter', sans-serif;
+}
+
+/* --------------------- Background colors --------------------- */
+.bg-red {
+    background-color: var(--red);
+}
+
+.bg-yellow {
+    background-color: var(--yellow);
+}
+
+.bg-white {
+    background-color: var(--white);
+}
+
+/* --------------------- Nav Bar --------------------- */
+
+.navbar {
+    background-color: #F0F0F0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+}
+
+.logo img {
+    height: 25px;
+    width: auto;
+    display: block;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #1D1D1D;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+.uber-btn {
+    background-color: #4EA227;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 50px;
+}
+
+/* --------------------- Hero --------------------- */
+
+.hero {
+    background-color: #7F1B1B;
+    color: white;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+    flex: 1;
+}
+
+.hero-image img {
+    width: 400px;
+}
+
+.hero-text h1 {
+    font-size: 64px;
+    color: #FFFFFF;
+}
+
+.hero-text p {
+    margin: 20px 0;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.cta-btn {
+    background-color: #E8D608;
+    color: black;
+    padding: 15px 30px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    line-height: 0;
+}
+
+/* --------------------- Menu Section --------------------- */
+
+.menu-section {
+    background-color: #F2F2F2;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-card {
+    width: 996px;
+    height: 427px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 60px;
+}
+
+.menu-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 45%;
+}
+
+.menu-item strong {
+    display: block;
+    font-size: 18px;
+}
+
+.menu-item span {
+    font-size: 14px;
+    color: #555;
+}
+
+/* --------------------- Menu Prices --------------------- */
+
+.price-section {
+    display: flex;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.price-box {
+    background: white;
+    padding: 25px 50px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.price-box h3 {
+    margin-bottom: 10px;
+}
+
+.price-box p {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.highlight {
+    background-color: #E8D608;
+}
