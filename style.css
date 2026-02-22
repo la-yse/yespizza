@@ -61,11 +61,9 @@ html {
     font-family: 'Cocogoose', sans-serif;
 }
 
-
-
 /* --------------------- General --------------------- */
 
-/*Sections title (Menu and Promos)*/
+/*Sections title (Menu)*/
 .heading-title {
     --font-principal: 'Inter', sans-serif;
     font-size: 42px;
@@ -74,9 +72,6 @@ html {
     margin-bottom: 60px;
     text-align: center;
 }
-
-
-
 
 /* --------------------- Nav Bar --------------------- */
 
@@ -107,7 +102,7 @@ html {
     font-size: 0.8rem;
 }
 
-navbar .nav-links li a {
+.navbar .nav-links li a {
     color: var(--black);
     text-decoration: none;
     font-weight: bold;
@@ -117,7 +112,6 @@ navbar .nav-links li a {
 .navbar .nav-links li a:hover {
     color: var(--red);
     transition: color 0.4s ease;
-
 }
 
 .uber-btn {
@@ -163,31 +157,33 @@ navbar .nav-links li a {
     flex: 1;
 }
 
-.hero-image img {
-    width: 400px;
-}
 
 /*--------- Animation Hero Image ---------*/
-
 .hero-image img {
-    transition: transform 3s ease-in-out;
+    width: 400px;
+    display: block;
+    margin: 0 auto;
     animation: float-swing 4s ease-in-out infinite alternate;
+    transition: transform 3s ease-in-out;
+    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.25));
 }
 
 @keyframes float-swing {
     0% {
-        transform: translateY(0px) rotate(0deg);
+        transform: translateY(0px) scale(1) rotate(0deg);
+        filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.25));
     }
 
     50% {
-        transform: translateY(-10px) rotate(1deg);
+        transform: translateY(-10px) scale(1.05) rotate(1deg);
+        filter: drop-shadow(0 15px 20px rgba(0, 0, 0, 0.25));
     }
 
     100% {
-        transform: translateY(-5px) rotate(-1deg);
+        transform: translateY(-5px) scale(1.03) rotate(-1deg);
+        filter: drop-shadow(0 12px 18px rgba(0, 0, 0, 0.25));
     }
 }
-
 
 .hero-text h1 {
     font-size: 55px;
@@ -327,4 +323,206 @@ navbar .nav-links li a {
 
 .highlight {
     background-color: #E8D608;
+}
+
+/* --------------------- Separator Section --------------------- */
+.section-separator {
+    width: 100%;
+    overflow: hidden;
+}
+
+.section-separator img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* --------------------- PROMOS SECTION --------------------- */
+/* --------------------- PROMOS SECTION --------------------- */
+.promos-section {
+    background-color: #FED74E;
+    padding: 80px 60px 0 60px;
+}
+
+.promos-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.promos-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.card-single {
+    background-color: #fff;
+    width: 250px;
+    height: 300px;
+    border-radius: 30px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-single h3 {
+    font-size: 16px;
+    color: var(--red);
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: var(--font-cocogoose)
+}
+
+.card-single img {
+    width: 230px;
+    height: 150px;
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+.card-single p {
+    font-family: var(--font-principal);
+    font-size: 13px;
+
+}
+
+.promo-image img {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 30px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 0;
+}
+
+/* --------------------- FOOTER --------------------- */
+
+.footer {
+    background-color: var(--red);
+    color: var(--white);
+    padding: 60px 80px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-left img {
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.footer-left p {
+    margin: 10px 0;
+    padding: 10px 0;
+    text-align: left;
+    font-size: 12px;
+
+}
+
+.footer-logo {
+    color: var(--white);
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: var(--font-cocogoose);
+}
+
+.footer-logo:hover {
+    color: var(--yellow);
+}
+
+.footer-social i {
+    font-size: 14px;
+    color: white;
+    margin-right: 20px;
+    transition: 0.3s ease;
+    cursor: pointer;
+
+}
+
+.footer-social i:hover {
+    color: var(--yellow);
+}
+
+
+.footer-center p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    margin-bottom: 12px;
+    font-size: 12px;
+
+}
+
+.footer-center i {
+    font-size: 12px;
+    color: var(--white);
+}
+
+.footer-right p {
+    margin: 5px 0;
+    font-size: 12px;
+
+}
+
+.footer-right a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+
+}
+
+.footer-right a:hover {
+    color: var(--yellow);
+}
+
+
+
+/* --------------- Responsividade --------------- */
+@media (max-width: 1024px) {
+    .promos-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .promos-cards {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+
+    .promo-image img {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-left,
+    .footer-center,
+    .footer-right {
+        width: 100%;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
 }
